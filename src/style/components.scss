@@ -76,11 +76,13 @@
     height: 100vh;
     transition: all 0.3s;
     opacity: 100%;
+    z-index: 10;
   }
 
   .mobile {
     display: flex;
     flex-direction: column;
+    z-index: 11;
 
     a {
       font-family: roboto;
@@ -95,6 +97,7 @@
       height: 40px;
       display: flex;
       align-items: center;
+      z-index: 12;
     }
   }
   .hidden_menu {

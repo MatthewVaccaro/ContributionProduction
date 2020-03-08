@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import "../style/components.scss";
 import logo from "../assets/logo.svg";
 import menu from "../assets/menu.svg";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink
+} from "react-router-dom";
 
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
@@ -22,24 +27,34 @@ const NavBar = () => {
             <img classname="logo" src={logo} alt="logo" />
           </div>
           <nav>
-            <Link to="/">Home</Link>
-            <Link to="/all_challenges">All Challenges</Link>
-            <Link to="/resources">Resources</Link>
+            <NavLink to="/" exact activeStyle={{ color: "#4d56db" }}>
+              Home
+            </NavLink>
+            <NavLink
+              to="/all_challenges"
+              exact
+              activeStyle={{ color: "#4d56db" }}
+            >
+              All Challenges
+            </NavLink>
+            <NavLink to="/resources" exact activeStyle={{ color: "#4d56db" }}>
+              Resources
+            </NavLink>
           </nav>
           <img onClick={toggler} src={menu} className="menu" />
         </div>
       </div>
       <div className={toggle ? "menu_container" : "menu_container hidden_menu"}>
         <nav className={toggle ? "mobile" : "mobile_hidden"}>
-          <Link onClick={toggler} to="/">
+          <NavLink onClick={toggler} to="/">
             Home
-          </Link>
-          <Link onClick={toggler} to="/all_challenges">
+          </NavLink>
+          <NavLink onClick={toggler} to="/all_challenges">
             All Challenges
-          </Link>
-          <Link onClick={toggler} to="/resources">
+          </NavLink>
+          <NavLink onClick={toggler} to="/resources">
             Resources
-          </Link>
+          </NavLink>
         </nav>
       </div>
     </>
