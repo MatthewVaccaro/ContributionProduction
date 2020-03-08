@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../../style/prompts.scss";
 import Toggle from "../../components/Toggle";
 import ChallengeFooter from "../../components/challengeFooter";
 
 const Ch_01 = () => {
   const [toggleState, setToggleState] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
