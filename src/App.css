@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+.master_container {
+  background: white;
+  width: 100%;
+}
+.master_container .container {
+  display: flex;
+  flex-flow: column;
+  width: 850px;
+  margin: 0 auto;
+}
+.header {
+  margin-bottom: 70px;
+}
+.header .beta {
+  display: inline-block;
+  background: #dbddf8;
+  letter-spacing: 2px;
+  padding: 5px;
+  border-radius: 3px;
+  margin-bottom: 50px;
+  border-left: solid 3px #4d56db;
+}
+.header .beta p {
+  color: #4d56db;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.header h1 {
+  font-size: 3.5rem;
+  color: #222;
+  font-weight: 400;
+}
+.header .paragraph {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #666;
+  line-height: 190%;
+  border-left: solid 3px #d1d1d1;
+  padding-left: 10px;
+  width: 500px;
+  margin: 30px 0px;
+}
+.header .cta_btn {
+  background: #4d56db;
+  color: white;
+  padding: 17px 32px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  transform-origin: center;
+  transition: ease-in-out all 0.3s;
+}
+.header .cta_btn:hover {
+  color: #4d56db;
+  background: #dbddf8;
+  padding: 17px 40px;
+}
+.how_it_works h2 {
+  font-size: 2.8rem;
+  width: 100%;
+  text-align: center;
+  color: #222;
+  margin-bottom: 50px;
+}
+.how_it_works .section_1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0px;
+}
+.how_it_works .section_1 .left_lockup {
+  width: 47%;
+  display: flex;
+  align-items: center;
+}
+.how_it_works .section_1 .left_lockup h5 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #222;
+}
+.how_it_works .section_1 .left_lockup .paragraph {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #666;
+  line-height: 190%;
+  border-left: solid 3px #d1d1d1;
+  padding-left: 10px;
+  margin: 15px 0px;
+}
+.how_it_works .section_1 .right_lockup {
+  width: 47%;
+}
+.how_it_works .section_1 .right_lockup .challenge_card {
+  box-shadow: 0px 7px 21px rgba(51, 51, 51, 0.19);
+  border-radius: 5px;
+  background: white;
+  padding: 14px 12px;
+}
+.how_it_works .section_1 .right_lockup .challenge_card h6 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #666;
+}
+.how_it_works .section_1 .right_lockup .challenge_card h6 span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+}
+.how_it_works .section_1 .right_lockup .challenge_card h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #222;
+  margin: 10px 0px;
+}
+.how_it_works .section_1 .right_lockup .challenge_card .tag {
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: 3px 5px;
+  background: #d1d1d1;
+  font-weight: 600;
+  color: #666;
+  margin: 5px 0px;
+  border-radius: 2px;
+}
+.how_it_works .section_1 .right_lockup .challenge_card .paragraph {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #666;
+  line-height: 190%;
+  margin: 5px 0px;
+}
+.how_it_works .section_1 .right_lockup .challenge_card .link_btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: rgba(219, 221, 248, 0);
+  transition: all 0.5s;
+}
+.how_it_works .section_1 .right_lockup .challenge_card .link_btn:hover {
+  background: #dbddf8;
+}
+.how_it_works .section_1 .right_lockup .challenge_card .link_btn .link {
+  font-weight: 600;
+  color: #4d56db;
+  font-size: 1.4rem;
+  margin-right: 10px;
+}
+.how_it_works .section_2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0px;
+}
+.how_it_works .section_2 .left_lockup {
+  width: 47%;
+  display: flex;
+}
+.how_it_works .section_2 .left_lockup h5 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #222;
+}
+.how_it_works .section_2 .left_lockup .paragraph {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #666;
+  line-height: 190%;
+  border-left: solid 3px #d1d1d1;
+  padding-left: 10px;
+  margin: 15px 0px;
+}
+.how_it_works span {
+  color: #4d56db;
+  font-weight: bold;
+}
+.how_it_works .section_3 {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0px;
+}
+.how_it_works .section_3 .left_lockup {
+  width: 47%;
+  display: flex;
+}
+.how_it_works .section_3 .left_lockup h5 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #222;
+}
+.how_it_works .section_3 .left_lockup .paragraph {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #666;
+  line-height: 190%;
+  border-left: solid 3px #d1d1d1;
+  padding-left: 10px;
+  margin: 15px 0px;
+}
+.how_it_works .section_3 .right_lockup {
+  width: 47%;
+}
+.how_it_works .section_3 .right_lockup .assist_mode_container {
+  display: flex;
+}
+.how_it_works .section_3 .right_lockup .assist_mode_container h5 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #222;
+  margin: auto 0px;
+  margin-right: 10px;
+}
+.how_it_works
+  .section_3
+  .right_lockup
+  .assist_mode_container
+  .toggle_container {
+  display: flex;
+  background: #4d56db;
+  padding: 3px;
+  border-radius: 3px;
+  width: 65px;
+}
+.how_it_works
+  .section_3
+  .right_lockup
+  .assist_mode_container
+  .toggle_container
+  .toggle_left {
+  background: white;
+  border-radius: 3px;
+  width: 50%;
+}
+.how_it_works
+  .section_3
+  .right_lockup
+  .assist_mode_container
+  .toggle_container
+  .toggle_right {
+  color: white;
+  width: 50%;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 5px 0px;
+}
+.how_it_works .section_3 .highlighted {
+  background: #dbddf8;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin: 10px 0px;
+}
+.how_it_works .section_3 .highlighted .paragraph {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #666;
+  line-height: 190%;
+}
+footer {
+  margin: 150px 0 0 0;
+}
+footer .footer_container {
+  display: flex;
+  justify-content: space-between;
+  width: 850px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+footer .footer_container a {
+  font-size: 1.4rem;
+  color: #4d56db;
+  font-weight: bold;
+}
+footer .footer_container a:hover {
+  color: #dbddf8;
+}
+footer .footer_container p {
+  font-size: 1.4rem;
+  color: #222;
+  font-weight: bold;
+}

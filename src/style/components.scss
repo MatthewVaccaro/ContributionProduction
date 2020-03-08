@@ -1,0 +1,362 @@
+@import "./master.scss";
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+//<- Navigation.js -> //
+
+.menu {
+  display: none;
+  @include responsive(phone) {
+    display: block;
+    scale: 1.1;
+  }
+}
+
+.nav_master {
+  max-width: 1380px;
+  margin: 0 auto;
+  display: flex;
+
+  @include responsive(phone) {
+  }
+
+  .nav_container {
+    display: flex;
+    max-width: 850px;
+    width: 96%;
+    margin: 0 auto;
+
+    .logo_container {
+      display: flex;
+      align-items: center;
+      width: 50%;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+
+      a {
+        font-family: roboto;
+        font-weight: 600;
+        font-size: 1.4rem;
+        color: $text_light;
+        margin: 20px;
+        transition: all 0.25s;
+        text-decoration: none;
+        white-space: nowrap;
+
+        @include responsive(phone) {
+          display: none;
+        }
+
+        &:hover {
+          color: $brand;
+        }
+      }
+    }
+  }
+}
+
+.menu_container {
+  display: none;
+}
+
+@include responsive(phone) {
+  body {
+    padding-top: 5px;
+  }
+  .menu_container {
+    background: $brand;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.3s;
+    opacity: 100%;
+  }
+
+  .mobile {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      font-family: roboto;
+      font-weight: 500;
+      font-size: 2.2rem;
+      color: white;
+      margin: 15px 10px;
+      transition: all 0.25s;
+      text-decoration: none;
+      white-space: nowrap;
+      width: 200%;
+      height: 40px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .hidden_menu {
+    width: 0%;
+    opacity: 0%;
+  }
+  .mobile_hidden {
+    display: none;
+  }
+}
+
+//<- Navigation.js -> //
+
+//All Challenges Components//
+
+.card_container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  border: solid 2px $bar;
+  border-radius: 6px;
+  background: white;
+  padding: 20px;
+  width: 100%;
+  margin: 20px 0px;
+
+  a {
+    text-decoration: none;
+    padding: 0px;
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 1.4rem;
+    padding-bottom: 5px;
+    border-bottom: solid 1px $bar;
+    text-transform: uppercase;
+    color: $text_light;
+    font-weight: 600;
+
+    .circle {
+      color: $brand;
+    }
+  }
+
+  h3 {
+    @include h3;
+    margin: 15px 0px;
+    line-height: 130%;
+
+    @include responsive(phone) {
+      width: 99%;
+      line-height: 120%;
+    }
+  }
+
+  p {
+    @include paragraph;
+  }
+
+  .link_btn {
+    color: $brand;
+    background: white;
+    font-size: 1.4rem;
+    margin: 20px 0px 0px 0px;
+    padding: 17px 32px;
+    border: solid 1px $brand;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s;
+
+    &:hover {
+      padding: 17px 42px;
+      background: $brand;
+      color: white;
+    }
+
+    .link {
+      font-weight: 600;
+      color: $brand;
+      font-size: 1.4rem;
+      margin-right: 10px;
+    }
+  }
+}
+
+//All Challenges Components//
+
+//All Resources Components//
+.grid_container {
+  // display: grid;
+  column-count: 2;
+  grid-column-gap: 25px;
+  @include responsive(phone) {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
+
+  a {
+    text-decoration: none;
+    transition: all 0.5s;
+    &:hover {
+      color: $brand;
+    }
+
+    @include responsive(phone) {
+      width: 100%;
+    }
+  }
+
+  .resourceCard {
+    border: solid 2px $bar;
+    border-radius: 6px;
+    background: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    transition: all 0.3s;
+    &:hover {
+      border: solid 2px $brand;
+
+      h3 {
+        color: $brand;
+      }
+    }
+    @include responsive(phone) {
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 1.4rem;
+      padding-bottom: 5px;
+      border-bottom: solid 1px $bar;
+      text-transform: uppercase;
+      color: $text_light;
+      font-weight: 600;
+
+      .circle {
+        color: $brand;
+      }
+    }
+    h3 {
+      @include h3;
+      margin: 15px 0px;
+      line-height: 130%;
+      transition: all 0.3s;
+
+      @include responsive(phone) {
+        width: 99%;
+        line-height: 120%;
+      }
+    }
+
+    p {
+      @include paragraph;
+    }
+  }
+}
+
+//All Challenges Components//
+
+.toggle_section {
+  display: flex;
+
+  .toggle_container {
+    background: grey;
+    display: flex;
+    align-items: center;
+    width: 90px;
+    border-radius: 5px;
+    justify-content: space-between;
+    transition: all 1s;
+  }
+
+  .on {
+    background: $brand;
+  }
+  .off {
+    background: $bar;
+  }
+
+  h5 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $text_dark;
+    margin: auto 0px;
+    margin-right: 10px;
+    white-space: nowrap;
+  }
+
+  .textOn {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    align-content: right;
+    margin-right: 15px;
+    transition: all 1s;
+  }
+  .textOff {
+    color: $text_dark;
+    font-size: 1.4rem;
+    font-weight: 600;
+    align-content: right;
+    margin-left: 15px;
+    transition: all 1s;
+  }
+
+  .disabled {
+    display: none;
+  }
+  .swtich {
+    width: 35px;
+    height: 22px;
+    border-radius: 4px;
+    background: white;
+    margin: 5px;
+    display: inline-block;
+    transition: all 1s;
+  }
+}
+
+//<-Footer->//
+
+footer {
+  margin: 75px 0 0 0;
+  .footer_container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 850px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+    @include responsive(phone) {
+      padding: 20px 10px;
+      width: 100%;
+      flex-flow: column;
+      align-items: center;
+    }
+
+    a {
+      font-size: 1.6rem;
+      color: $brand;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.2s;
+
+      &:hover {
+        font-size: 1.7rem;
+        margin-bottom: 19px;
+      }
+
+      @include responsive(phone) {
+        margin: 20px 0px;
+      }
+    }
+    p {
+      font-size: 1.4rem;
+      color: $text_dark;
+      font-weight: bold;
+    }
+  }
+}

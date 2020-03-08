@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+.nav_master {
+  margin: 0px 0px 20px 0px;
+  display: flex;
+  background: white;
+  width: 100%;
+}
+.nav_master .nav_container {
+  display: flex;
+  width: 850px;
+  margin: 0 auto;
+}
+.nav_master .nav_container .logo_container {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.nav_master .nav_container nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+.nav_master .nav_container nav a {
+  font-family: roboto;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #666;
+  margin: 20px;
+  transition: all 0.25s;
+  text-decoration: none;
+}
+.nav_master .nav_container nav a:hover {
+  color: #4d56db;
+}
+.signup {
+  background: #fafafa;
+  padding: 50px;
+}
+.signup .form_container {
+  justify-content: center;
+}
+.signup .form_container .error {
+  display: inline-block;
+  padding: 10px 5px;
+  color: #db4d4d;
+  border-left: solid 5px #db4d4d;
+  font-size: 1.4rem;
+  margin: 15px auto;
+}
+.signup .form_container form {
+  display: flex;
+  justify-content: center;
+}
+.signup .form_container form .field_container {
+  display: flex;
+  justify-content: center;
+}
+.signup .form_container form .field_container input {
+  color: #222;
+  background: white;
+  border: solid 2px #d1d1d1;
+  font-size: 1.4rem;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 25px;
+  font-weight: bold;
+  width: 300px;
+  transition: 0.5s;
+}
+.signup .form_container form .field_container input:focus {
+  border: solid 2px #4d56db;
+}
+.signup h2 {
+  font-size: 2.8rem;
+  width: 100%;
+  text-align: center;
+  color: #222;
+}
+.signup .paragraph {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #666;
+  line-height: 190%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  width: 500px;
+}
+.signup .cta_btn {
+  background: #4d56db;
+  color: white;
+  padding: 17px 32px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  transform-origin: center;
+  transition: ease-in-out all 0.3s;
+}
+.signup .cta_btn:hover {
+  color: #4d56db;
+  background: #dbddf8;
+  padding: 17px 40px;
+}
+.master {
+  width: 100%;
+}
+.master .card_container {
+  width: 850px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.master .card_container .card {
+  border: solid 2px #d1d1d1;
+  border-radius: 5px;
+  background: white;
+  padding: 14px 12px;
+  width: 49%;
+  margin-bottom: 20px;
+}
+.master .card_container .card a {
+  text-decoration: none;
+}
+.master .card_container .card h6 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #666;
+}
+.master .card_container .card h6 span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+}
+.master .card_container .card h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #222;
+  margin: 10px 0px;
+  line-height: 150%;
+}
+.master .card_container .card .tag {
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: 5px 7px;
+  background: #d1d1d1;
+  color: #666;
+  font-weight: 600;
+  margin: 5px 0px;
+  border-radius: 2px;
+  letter-spacing: 1px;
+}
+.master .card_container .card .paragraph {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #666;
+  line-height: 190%;
+  margin: 5px 0px;
+}
+.master .card_container .card .link_btn {
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  border: none;
+  background: rgba(219, 221, 248, 0);
+  transition: all 0.5s;
+}
+.master .card_container .card .link_btn:hover {
+  background: #dbddf8;
+  cursor: pointer;
+}
+.master .card_container .card .link_btn .link {
+  font-weight: 600;
+  color: #4d56db;
+  font-size: 1.4rem;
+  margin-right: 10px;
+}
+.view_container {
+  width: 100%;
+}
+.view_container .view {
+  width: 850px;
+  margin: 0 auto;
+}
+.view_container .view h2 {
+  font-size: 2.8rem;
+  color: #222;
+  margin: 50px 0px;
+  font-weight: 600;
+}
+.toggle_section {
+  display: flex;
+}
+.toggle_section .toggle_container {
+  background: grey;
+  display: flex;
+  align-items: center;
+  width: 90px;
+  border-radius: 5px;
+  justify-content: space-between;
+  transition: all 1s;
+}
+.toggle_section .on {
+  background: #4d56db;
+}
+.toggle_section .off {
+  background: #d1d1d1;
+}
+.toggle_section h5 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #222;
+  margin: auto 0px;
+  margin-right: 10px;
+}
+.toggle_section .textOn {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+  align-content: right;
+  margin-right: 15px;
+  transition: all 1s;
+}
+.toggle_section .textOff {
+  color: #222;
+  font-size: 1.4rem;
+  font-weight: 600;
+  align-content: right;
+  margin-left: 15px;
+  transition: all 1s;
+}
+.toggle_section .disabled {
+  display: none;
+}
+.toggle_section .swtich {
+  width: 35px;
+  height: 22px;
+  border-radius: 4px;
+  background: white;
+  margin: 5px;
+  display: inline-block;
+  transition: all 1s;
+}
+footer {
+  margin: 150px 0 0 0;
+}
+footer .footer_container {
+  display: flex;
+  justify-content: space-between;
+  width: 850px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+footer .footer_container a {
+  font-size: 1.4rem;
+  color: #4d56db;
+  font-weight: bold;
+}
+footer .footer_container a:hover {
+  color: #dbddf8;
+}
+footer .footer_container p {
+  font-size: 1.4rem;
+  color: #222;
+  font-weight: bold;
+}

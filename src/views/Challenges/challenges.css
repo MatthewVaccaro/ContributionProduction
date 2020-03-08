@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+@keyframes fadeIn {
+  from {
+    color: rgba(102, 102, 102, 0);
+    background: rgba(219, 221, 248, 0);
+  }
+  to {
+    color: #666;
+    background: #dbddf8;
+  }
+}
+@keyframes fadeOut {
+  from {
+    color: #666;
+    background: #dbddf8;
+  }
+  to {
+    color: rgba(102, 102, 102, 0);
+    background: rgba(219, 221, 248, 0);
+  }
+}
+.master {
+  width: 850px;
+  margin: 0 auto;
+}
+.master .titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.master .titleContainer h6 {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 500;
+}
+.master .titleContainer .darken {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 600;
+}
+.master h2 {
+  font-size: 3.5rem;
+  color: #222;
+  font-weight: 400;
+}
+.master h4 {
+  font-size: 1.8rem;
+  color: #222;
+  color: #666;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.master .content .section {
+  margin: 30px 0;
+}
+.master .content h3 {
+  font-size: 2.8rem;
+  color: #222;
+  margin: 5px 0;
+}
+.master .content h4 {
+  color: #222;
+  margin: 40px 0px 15px 0px;
+}
+.master .content h5 {
+  font-size: 1.6rem;
+  color: #222;
+  margin-top: 15px;
+}
+.master .content .paragraph {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #666;
+  line-height: 190%;
+  margin: 25px 0;
+}
+.master .content .paragraph a {
+  color: #4d56db;
+  font-weight: bold;
+  text-decoration: none;
+}
+.master .content .question {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #666;
+  line-height: 190%;
+  margin: 25px 0;
+  color: #222;
+  margin: 0px 0;
+}
+.master .content .bar {
+  border-left: solid 3px #d1d1d1;
+  padding-left: 15px;
+}
+.master .content ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #666;
+  line-height: 190%;
+  margin: 25px 0;
+  margin: 5px 0px;
+}
+.master .content .hidden {
+  display: none;
+}
+.master .content .hint {
+  border-radius: 5px;
+  animation: fadeIn 0.5s;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #666;
+  line-height: 190%;
+  margin: 25px 0;
+  background: #dbddf8;
+  padding: 5px 10px;
+  margin: 20px 0px;
+}
+.darken {
+  color: #222;
+  font-weight: 600;
+}
+.lighten {
+  color: lightgray;
+}
+p a {
+  color: #4d56db;
+  font-weight: bold;
+  text-decoration: underline;
+}

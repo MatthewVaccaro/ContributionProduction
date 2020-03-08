@@ -1,0 +1,101 @@
+@import "./master.scss";
+
+@keyframes fadeIn {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.max-container {
+  max-width: 1380px;
+  margin: 0 auto;
+
+  .content-container {
+    max-width: 850px;
+    width: 90%;
+    margin: 0 auto;
+    @include responsive(phone) {
+      width: 96%;
+    }
+  }
+}
+
+.challenge-header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0px 40px 0px;
+  @include responsive(phone) {
+    max-width: 359px;
+    flex-flow: column;
+  }
+
+  .challenge-header-content {
+    max-width: 500px;
+    line-height: 400%;
+    h2 {
+      @include h2;
+    }
+    .paragraph {
+      @include paragraph;
+      font-family: roboto;
+      font-weight: bold;
+      margin: 10px 0px;
+      span {
+        color: $text_dark;
+      }
+    }
+  }
+}
+
+.section-container {
+  margin: 30px 0px;
+  a {
+    color: $brand;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  h3 {
+    @include h3;
+  }
+  p {
+    @include paragraph;
+    margin: 15px 0px 40px 0px;
+  }
+  .hint {
+    border-radius: 5px;
+    padding: 10px;
+    animation: fadeIn 0.5s;
+    @include paragraph();
+    background: $brand_light;
+    margin: 20px 0px;
+  }
+  .hidden {
+    display: none;
+  }
+  .bar {
+    @include left_bar;
+  }
+  h4 {
+    @include h4;
+    margin: 15px 0px;
+  }
+  h5 {
+    @include paragraph;
+    font-weight: bold;
+    color: $text_dark;
+  }
+
+  ul {
+    margin: 5px 0px 30px 0px;
+    li {
+      list-style-type: circle;
+      list-style-position: inside;
+      @include paragraph();
+      margin: 5px 0px;
+    }
+  }
+}

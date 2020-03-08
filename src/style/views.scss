@@ -1,0 +1,163 @@
+@import "./master.scss";
+
+.max-container {
+  max-width: 1380px;
+  margin: 0 auto;
+
+  .content-container {
+    max-width: 850px;
+    margin: 0 auto;
+    @include responsive(phone) {
+      max-width: 359px;
+    }
+  }
+
+  .hero-header {
+    margin: 0 auto;
+    // background: $brand_light;
+    width: 90%;
+    border-radius: 10px;
+    padding: 120px 30px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-bottom: 70px;
+    // background: url(../assets/bg.svg);
+    // background-repeat: no-repeat;
+
+    @include responsive(phone) {
+      padding: 60px 10px;
+      width: 95%;
+    }
+
+    h1 {
+      @include h1;
+      @include responsive(phone) {
+        font-size: 3.8rem;
+        width: 99%;
+        line-height: 120%;
+      }
+    }
+    p {
+      @include paragraph;
+      @include left_bar;
+      margin: 35px 0px;
+      width: 500px;
+      @include responsive(phone) {
+        width: 99%;
+      }
+    }
+    button {
+      @include button;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      &:hover {
+        padding: 17px 42px;
+        background: $brand_light;
+        color: $brand;
+      }
+    }
+  }
+  .current-state {
+    background: $text_dark;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 10px;
+    padding: 45px 30px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    @include responsive(phone) {
+      padding: 45px 10px;
+      width: 95%;
+    }
+
+    h3 {
+      @include h3;
+      text-align: center;
+      color: white;
+      margin-bottom: 15px;
+      @include responsive(phone) {
+        width: 99%;
+        line-height: 120%;
+      }
+    }
+    h4 {
+      @include h4;
+      text-align: center;
+      color: white;
+      line-height: 190%;
+      width: 700px;
+      @include responsive(phone) {
+        width: 99%;
+        line-height: 190%;
+      }
+    }
+  }
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px auto;
+
+  @include responsive(phone) {
+    flex-flow: column;
+    width: 359px;
+  }
+
+  .content {
+    width: 450px;
+
+    @include responsive(phone) {
+      width: 100%;
+    }
+    h3 {
+      @include h3;
+      margin-bottom: 15px;
+    }
+    p {
+      @include paragraph;
+    }
+  }
+  .asset {
+    @include responsive(phone) {
+      margin-top: 30px;
+    }
+  }
+}
+
+.switch {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px auto;
+
+  @include responsive(phone) {
+    flex-flow: column-reverse;
+    width: 359px;
+  }
+}
+
+.explainer {
+  margin: 40px 0px;
+  h3 {
+    @include h3;
+    margin-bottom: 15px;
+    @include responsive(phone) {
+      width: 99%;
+      line-height: 120%;
+    }
+  }
+
+  p {
+    @include paragraph;
+    margin: 0px 0px;
+    width: 700px;
+    @include responsive(phone) {
+      width: 99%;
+    }
+  }
+}
