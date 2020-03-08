@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import NavBar from "./components/navigation";
+import Navigation from "./components/navigation";
 import Home from "./views/Home.js";
 import AllChallenges from "./views/AllChallenges.js";
 import Resources from "./views/Resources.js";
@@ -14,7 +14,7 @@ import Footer from "./components/footer";
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <Navigation />
 
       <Route exact path="/" component={Home} />
       <Route exact path="/all_challenges" component={AllChallenges} />

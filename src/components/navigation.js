@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import "../style/components.scss";
 import logo from "../assets/logo.svg";
 import menu from "../assets/menu.svg";
-import supportButton from "../assets/supportButton.svg";
-
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const NavBar = () => {
