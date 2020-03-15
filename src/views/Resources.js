@@ -3,6 +3,10 @@ import ResourcesList from "../components/ResourcesList.js";
 import { gsap } from "gsap";
 
 const Resources = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   let line = useRef(null);
   let line2 = useRef(null);
   let other = useRef(null);
