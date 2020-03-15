@@ -1,20 +1,35 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Toggle from "../../components/Toggle.js";
 import "../../style/prompts.scss";
 import ChallengeFooter from "../../components/challengeFooter";
+import { gsap } from "gsap";
 
 const Ch_03 = () => {
   const [toggleState, setToggleState] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  let all = useRef(null);
+
+  useEffect(() => {
+    gsap.from([all], 1, {
+      opacity: 0,
+      delay: 0.5,
+      ease: "power3.out",
+      y: 100,
+      stagger: {
+        amount: 0.15
+      }
+    });
+  }, [all]);
   return (
     <>
       <header>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </header>
 
-      <div className="max-container">
+      <div ref={el => (all = el)} className="max-container">
         <div className="content-container">
           <div className="challenge-header-container">
             <div className="challenge-header-content">

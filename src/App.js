@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import GoogleAnalytics from "react-ga";
 
 import Navigation from "./components/navigation";
 import Home from "./views/Home.js";
@@ -12,9 +13,18 @@ import Ch_04 from "./views/Challenges/Ch_04.js";
 import Footer from "./components/footer";
 
 function App() {
+  GoogleAnalytics.initialize("UA-160732402-1");
+
+  const tracker = ({ location }) => {
+    GoogleAnalytics.set({ page: location.pathname });
+    GoogleAnalytics.pageview(location.pathname);
+    return null;
+  };
+
   return (
     <div className="App">
       <Navigation />
+      <Route render={tracker} />
 
       <Route exact path="/" component={Home} />
       <Route exact path="/all_challenges" component={AllChallenges} />

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { gsap } from "gsap";
+import GoogleAnalytics from "react-ga";
 //assets
 import startPoint from "../assets/startPoint.svg";
 import levelUp from "../assets/levelUp.svg";
@@ -37,10 +38,6 @@ function Home() {
   }, [other]);
   return (
     <>
-      <header>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </header>
-
       <div className="max-container">
         <section className="hero-header">
           <div className="content-container">
