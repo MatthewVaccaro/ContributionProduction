@@ -12,6 +12,11 @@
     }
   }
 
+  a {
+    font-weight: bold;
+    color: $brand;
+  }
+
   .hero-header {
     margin: 0 auto;
     // background: $brand_light;
@@ -43,6 +48,7 @@
       @include left_bar;
       margin: 35px 0px;
       width: 500px;
+
       @include responsive(phone) {
         width: 99%;
       }

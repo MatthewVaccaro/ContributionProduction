@@ -80,8 +80,8 @@ function Home() {
                 <p>
                   Inspiration is hard, and design sites don’t offer the right
                   starting point for creating a thoughtful project. All my
-                  challenges are hand crafted and give you a scenario, real
-                  data, & a final delieverable that will speak volumes to hiring
+                  challenges are handcrafted and give you a scenario, real data,
+                  & a final deliverable that will speak volumes to hiring
                   managers!
                 </p>
               </div>
@@ -99,7 +99,7 @@ function Home() {
                 <p>
                   We’re not offering you a simple way out, this will still be
                   difficult. Each challenge requires hours of work, research,
-                  user testing, and more. This culminates into high quality
+                  user testing, and more. This culminates in high-quality
                   portfolio pieces and true learnings through DOING! With the
                   end goal of leveling up your UX game and getting you a sweet
                   sweet design job!
@@ -111,10 +111,10 @@ function Home() {
                 <h3>For Any Skill Level</h3>
                 <p>
                   Yup, the challenges are hard but don’t worry! Every challenge
-                  has an assist mode with hand written tips, actionable steps,
-                  and links to lovely articles written by super smater people!
+                  has an assist mode with hand-written tips, actionable steps,
+                  and links to lovely articles written by super smarter people!
                   Lastly, you’re not alone, feel free to DM{" "}
-                  <a href="https://twitter.com/UseContribution">
+                  <a target="_blank" href="https://twitter.com/UseContribution">
                     @UseContribution
                   </a>{" "}
                   and I’ll do my best to help!
