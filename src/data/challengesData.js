@@ -19,7 +19,7 @@ export const challengesData = [
   },
   {
     id: "03",
-    title: "Breath New Life",
+    title: "Breathe New Life",
     industry: "Financial Tech",
     device: "Your Choice",
     info:
