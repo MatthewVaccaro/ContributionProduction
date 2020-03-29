@@ -90,16 +90,16 @@ const Ch_02 = () => {
               The world we live in is more emotionally and socially disconnected
               then it has ever been. Mentive was born out of the desire to help
               and be a voice to reconnect with each other! We have had great
-              success over the last years 3 years and have built a very
-              passionate community. As proud of our work as we are, there is
-              much more we can do! We can write the best articles about mental
-              health & how to connect more deeply but it has to resonate with
-              thousands of people. We're ready to be more personal with our
-              users and impact them as individuals. We don't know what this
-              looks like but we want to help people connect deeper (platonic or
-              otherwise). We also don't want to associate the magazine at all
-              with this product. In preparation for kicking off this project I
-              had Richard, my project manager gathers together some data we have
+              success over the last 3 years and have built a very passionate
+              community. As proud of our work as we are, there is much more we
+              can do! We can write the best articles about mental health & how
+              to connect more deeply but it has to resonate with thousands of
+              people. We're ready to be more personal with our users and impact
+              them as individuals. We don't know what this looks like but we
+              want to help people connect deeper (platonic or otherwise). We
+              also don't want to associate the magazine at all with this
+              product. In preparation for kicking off this project I had
+              Richard, my project manager gathers together some data we have
               collected about our readers over the last 6 months. By no means do
               you have to use this research. If you feel it's necessary, conduct
               more research. We're all excited to see where this product goes
@@ -230,10 +230,6 @@ const Ch_02 = () => {
                 Individuals with less social connection have disrupted sleep
                 patterns, altered immune systems, more inflammation and higher
                 levels of stress hormones.
-              </li>
-              <li>
-                found that isolation increases the risk of heart disease by 29
-                percent and stroke by 32 percent.
               </li>
               <li>
                 People with more long-lasting mental health problems often have
