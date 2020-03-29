@@ -7,7 +7,7 @@ export const challengesData = [
     industry: "Music",
     device: "Your Choice",
     info:
-      "You're apart of a small start-up of 11 employees that's flagship app is a music streaming service. The app touts 37 million songs, 9 Million artists, and thirty thousand daily users. The CEO recently announced through email that the company had just received a new round of funding of just under $3 million to completely pivot the product."
+      "You're the sole designer of a small start-up that's flagship app is a music streaming service. The CEO recently announced via email that the company has just received a new round of funding of just under $3 million if they agree to completely pivot the product to focus on a new niche. What direction will you purpose to the company?"
   },
   {
     id: "02",
@@ -15,7 +15,7 @@ export const challengesData = [
     industry: "Lifestyle",
     device: "Native App",
     info:
-      "You're a freelance UX designer who has gained the attention of the LifeStyle magazine publisher 'Mentive'. For the last decade, they have made a name for themselves by talking about human connection, the lack of it in our world, mental health, and how we can better. Mentive is looking to step into the tech industry by launching a native mobile app..."
+      "Mentive: a lifestyle magazine devoted to curing a major plague we don't talk about enough. How is it we can connect with anyone around the globe with a click of a button, yet the human race is more lonely than ever before? After writing about the intricacy of disconnection for over a decade, Mentive wants to jump into the tech world and reach people more thoughtfully. Of the hundreds of designers applying, you landed this freelance gig. Where will you take Mentive?"
   },
   {
     id: "03",
@@ -23,7 +23,7 @@ export const challengesData = [
     industry: "Financial Tech",
     device: "Your Choice",
     info:
-      "Throughout the last two years, the company you work for has made a name for its self by being one of the first online-only banking applications. As time has caught up with the company more and more banks have followed in suit. The last six months have been very focused on refining the product but there has been no improvement in acquisition..."
+      "A once-prominent bank making headlines as the first online-only finical institutions to now, finding it's self stagnant and lost. After six months of focusing on improvements to the current functionality, the growth remains dull. With the need to grow becoming ever more urgent, the company makes a push to truly differentiate themselves and focus on the market more heavily. What market will you and your partner focus on?"
   },
   {
     id: "04",
@@ -31,7 +31,7 @@ export const challengesData = [
     industry: "Productivity",
     device: "Your Choice",
     info:
-      "In the last two years, Pickly has exploded with growth. Starting as a small agency that worked with low to mid-tier clients. Pickly took a chance by stopping their agency work to focus on one of their employee's ideas that really took off and now helps fund the company. Since then the company has launch two more child products and now works with two..."
+      "What was once a vanilla mid-tier agency has boomed into Pickly, a self-funded incubator. Through this change, Pickly has altered the way they work to reignite this boom over and over again. Accomplishing this by cycling their teams in and out of the incubation phase and giving 50% equity to the teams that bring a successful product to market. Today leadership has announced the newest incubation will focus on productivity and has chosen you, to be the designer of this year's team! What will you produce?"
   }
   // {
   //   id: "05",
